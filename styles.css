@@ -59,10 +59,10 @@ body {
     align-items: center;
     margin-bottom: 25px;
     padding: 15px 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(201, 200, 200, 0.282);
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(204, 200, 200, 0.821);
 }
 
 .theme-toggle button {
@@ -221,10 +221,6 @@ body {
         width: 100%;
         max-width: 800px;
         height: auto;
-        /* Hardware acceleration for smoother mobile rendering */
-        transform: translateZ(0);
-        -webkit-transform: translateZ(0);
-        will-change: transform;
         /* Optimize touch interactions */
         touch-action: none;
         -webkit-touch-callout: none;
@@ -267,40 +263,7 @@ body {
     }
 }
 
-/* Additional mobile performance optimizations */
-@media (max-width: 600px) {
-    /* Further optimizations for smaller mobile screens */
-    .game-container {
-        padding: 10px;
-        margin: 5px;
-    }
-    
-    .header {
-        padding: 10px 15px;
-    }
-    
-    .game-stats {
-        font-size: 16px;
-        gap: 15px;
-    }
-    
-    .health-display {
-        font-size: 24px;
-    }
-    
-    .instructions {
-        font-size: 13px;
-    }
-}
 
-/* Prevent zoom on mobile inputs and interactions */
-@media (max-width: 900px) {
-    input, button, select, textarea {
-        font-size: 16px !important;
-        transform: translateZ(0);
-        -webkit-transform: translateZ(0);
-    }
-}
 
 /* Animation classes for game elements */
 .bounce {
