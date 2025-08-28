@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Runner Game</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="game-container">
-        <!-- Header with controls and stats -->
-        <div class="header">
-            <div class="theme-toggle">
-                <button id="themeToggle">🌙</button>
-            </div>
-            <div class="game-stats">
-                <div class="score">Score: <span id="score">0</span></div>
-                <div class="level">Level: <span id="level">1</span></div>
-                <div class="high-score">High Score: <span id="highScore">0</span></div>
-            </div>
-            <div class="health-display">
-                <span class="heart" id="heart1">❤️</span>
-                <span class="heart" id="heart2">❤️</span>
-                <span class="heart" id="heart3">❤️</span>
-            </div>
+      <!-- Header with controls and stats -->
+      <div class="header">
+        <div class="theme-toggle">
+          <button id="themeToggle" aria-label="Toggle theme">🌙</button>
         </div>
-
-        <!-- Game canvas -->
-        <canvas id="gameCanvas" width="800" height="400"></canvas>
-
-        <!-- Game over screen -->
-        <div class="game-over" id="gameOver">
-            <h2>Game Over!</h2>
-            <p>Final Score: <span id="finalScore">0</span></p>
-            <p>High Score: <span id="finalHighScore">0</span></p>
-            <button id="restartBtn">Restart Game</button>
+        <div class="game-stats">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="level">Level: <span id="level">1</span></div>
+          <div class="high-score">
+            High Score: <span id="highScore">0</span>
+          </div>
         </div>
-
-        <!-- Instructions -->
-        <div class="instructions">
-            <p>Press <strong>↑</strong> or <strong>Space</strong> to Jump</p>
-            <p>Avoid obstacles and survive as long as possible!</p>
+        <div class="health-display">
+          <span class="heart" id="heart1">❤️</span>
+          <span class="heart" id="heart2">❤️</span>
+          <span class="heart" id="heart3">❤️</span>
         </div>
+      </div>
+
+      <!-- Game canvas -->
+      <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+      <!-- Game over screen -->
+      <div class="game-over" id="gameOver">
+        <h2>Game Over!</h2>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <p>High Score: <span id="finalHighScore">0</span></p>
+        <button id="restartBtn">Restart Game</button>
+      </div>
+
+      <!-- Instructions -->
+      <div class="instructions">
+        <p>
+          Press <strong>↑</strong> or <strong>Space</strong> or
+          <strong>Tap screen</strong> to Jump
+        </p>
+        <p><b>Dino Game Developed by SAGAR</b></p>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
